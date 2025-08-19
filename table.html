@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Users</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        caption {
+            caption-side: bottom;
+            padding-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Registered Users</h1>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./table.html">Users</a>
+            <a href="./register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <p>Table With <code>rowspan</code> and <code>colspan</code>.</p>
+
+        <table>
+            <caption>User Details</caption>
+            <tr>
+                <th>Registration Period</th>
+                <th>Gender</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td rowspan="3">August 2024</td>
+                <td rowspan="2">Male</td>
+                <td>Giorgi Gogoladze</td>
+                <td>giorgi.gogoladze@gmail.com</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Dato Davitadze</td>
+                <td>dato.davitadze@gmail.com</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Female</td>
+                <td>Levan Levanadze</td>
+                <td colspan="2" style="text-align: center;">Pending Activation</td>
+            </tr>
+            <tr>
+                <td>July 2024</td>
+                <td>Male</td>
+                <td>Irakli Irakladze</td>
+                <td colspan="2" style="text-align: center;">Account Inactive</td>
+            </tr>
+        </table>
+
+    </main>
+
+</body>
+</html>
